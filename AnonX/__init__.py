@@ -49,3 +49,20 @@ async def create_session():
 
 # Async function ko run karne ke liye asyncio.run() ka use karenge
 asyncio.run(create_session())
+import asyncio
+from aiohttp import ClientSession
+
+# Global variable to store the aiohttp session
+aiohttpsession = None
+
+# Async function jo ClientSession ko initialize karega
+async def create_session():
+    global aiohttpsession
+    aiohttpsession = ClientSession()
+
+# Code ko async environment mein run karne ke liye isko wrap karte hain
+def initialize_session():
+    asyncio.run(create_session())
+
+# Ab initialize_session ko call karke session start kar sakte hain
+initialize_session()
