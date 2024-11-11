@@ -39,3 +39,11 @@ SoundCloud = SoundAPI()
 Telegram = TeleAPI()
 
 aiohttpsession = ClientSession()
+import asyncio
+from aiohttp import ClientSession
+
+async def create_session():
+    global aiohttpsession
+    aiohttpsession = ClientSession()
+
+asyncio.run(create_session())
