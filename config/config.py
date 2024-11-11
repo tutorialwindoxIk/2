@@ -10,9 +10,9 @@ load_dotenv()
 API_ID = int(getenv("API_ID", ""))
 API_HASH = getenv("API_HASH")
 
-BOT_TOKEN = getenv("BOT_TOKEN")
+BOT_TOKEN = getenv("BOT_TOKEN", "7313059877:AAGiCX8wPk-F6G00xoDeoNR-dQZ4HIRS1I0")
 
-MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://AsadAli:AsadAli@cluster0.3ejv7.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
+MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://Somu:Somu@somu.xbkiklu.mongodb.net/?retryWrites=true&w=majority&appName=Somu")
 
 DURATION_LIMIT_MIN = int(
     getenv("DURATION_LIMIT", "90000000")
@@ -22,12 +22,12 @@ SONG_DOWNLOAD_DURATION = int(
     getenv("SONG_DOWNLOAD_DURATION_LIMIT", "180")
 )
 
-LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-1001631416406"))
+LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-1002100433415"))
 
-MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", "Alisha Music")
+MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", "Somu Music")
 
 OWNER_ID = list(
-    map(int, getenv("OWNER_ID", "5772545455").split())
+    map(int, getenv("OWNER_ID", "7070591202").split())
 )
 
 HEROKU_API_KEY = getenv("HEROKU_API_KEY")
