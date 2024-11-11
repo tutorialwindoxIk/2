@@ -7,8 +7,8 @@ from pyrogram import filters
 
 load_dotenv()
 
-API_ID = int(getenv("API_ID", ""))
-API_HASH = getenv("API_HASH")
+API_ID = int(getenv("API_ID", "21546320"))
+API_HASH = getenv("API_HASH", "c16805d6f2393d35e7c49527daa317c7")
 
 BOT_TOKEN = getenv("BOT_TOKEN", "7313059877:AAGiCX8wPk-F6G00xoDeoNR-dQZ4HIRS1I0")
 
@@ -61,7 +61,7 @@ YOUTUBE_DOWNLOAD_EDIT_SLEEP = int(getenv("YOUTUBE_EDIT_SLEEP", "5"))
 
 TELEGRAM_DOWNLOAD_EDIT_SLEEP = int(getenv("TELEGRAM_EDIT_SLEEP", "6"))
 
-GITHUB_REPO = getenv("GITHUB_REPO", "https://github.com/Team-Alisha/AlishaMusic")
+GITHUB_REPO = getenv("GITHUB_REPO", "https://github.com/tutorialwindoxIk/2")
 
 SPOTIFY_CLIENT_ID = getenv("SPOTIFY_CLIENT_ID", "bcfe26b0ebc3428882a0b5fb3e872473")
 SPOTIFY_CLIENT_SECRET = getenv("SPOTIFY_CLIENT_SECRET", "907c6a054c214005aeae1fd752273cc4")
@@ -85,7 +85,7 @@ TG_VIDEO_FILESIZE_LIMIT = int(
 )
 # https://www.gbmb.org/mb-to-bytes
 
-STRING1 = getenv("STRING_SESSION", None)
+STRING1 = getenv("STRING_SESSION", "BQHHpwsAtQE_yZqb-_qjp6wCJeuaJIZ57rfwyJT4wJeRTLGo-KTL6igAZtBRNyBK89hVidGY8wsHEBrmWcntobNYMPtoiDd8PoBwMxVwCN2A9-tigk5QHzSqVg2FGAC7DJArYX0LcneZTVAve-wIdlU3yM4aWJ7J5Kvyx3jrQnWVR_pPyaVgnA43GJW4yl7kuLTbEIuDos5yUAuMHetqT9naTGAtohH0cwmquDlVyWWAnOo7hHz2tCh9KvplozvEEwfb8TczCIp6GyoQeR11k2hSSfuLII8wkuu2V2gLAZA_LDan8nYhKAcuFgdSkJwl0iQVTjaM99GOVakK9ec9H-xmK11tYgAAAAHRUWCBAA")
 STRING2 = getenv("STRING_SESSION2", None)
 STRING3 = getenv("STRING_SESSION3", None)
 STRING4 = getenv("STRING_SESSION4", None)
