@@ -43,13 +43,3 @@ aiohttpsession = ClientSession()
 if name == "main":
     asyncio.run(initialize_session())
 
-import asyncio
-from aiohttp import ClientSession
-
-async def main():
-    async with ClientSession() as aiohttpsession:
-        # আপনার লজিক এখানে লিখুন
-        print("Session created successfully")
-
-if __name__ == "__main__":
-    asyncio.run(main())
