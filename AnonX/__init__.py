@@ -39,3 +39,6 @@ SoundCloud = SoundAPI()
 Telegram = TeleAPI()
 
 aiohttpsession = ClientSession()
+
+if name == "main":
+    asyncio.run(initialize_session())
