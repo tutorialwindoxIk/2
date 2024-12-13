@@ -7,10 +7,10 @@ from pyrogram import filters
 
 load_dotenv()
 
-API_ID = int(getenv("API_ID", "21546320"))
-API_HASH = getenv("API_HASH", "c16805d6f2393d35e7c49527daa317c7")
+API_ID = int(getenv("API_ID", "28588693"))
+API_HASH = getenv("API_HASH", "fac94f1f1aa4aa395280a670ddf9c0f2")
 
-BOT_TOKEN = getenv("BOT_TOKEN", "7313059877:AAGiCX8wPk-F6G00xoDeoNR-dQZ4HIRS1I0")
+BOT_TOKEN = getenv("BOT_TOKEN", "8124266415:AAEBEFp6GMZ-FSBaqNFFKvHzCc4tCZKN3Xs")
 
 MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://Somu:Somu@somu.xbkiklu.mongodb.net/?retryWrites=true&w=majority&appName=Somu")
 
@@ -85,7 +85,7 @@ TG_VIDEO_FILESIZE_LIMIT = int(
 )
 # https://www.gbmb.org/mb-to-bytes
 
-STRING1 = getenv("STRING_SESSION", "BQFIxVAAUZCBqEqKWucCx6KatUoMI1nYN9mEhAAWQuhgd3qzqCliu9gJjFIkEFQn_rUp79mj6wjMZITPOeqR19Rbl0I2ILTr1eEWPkG6SXnT3BxJ2DkRZFvqzNS5npUbPV-wg4CfZaD-SuJckwjA69N_fhdjqo3bo4ogdnBIS5c3xRiEnFQKmlsSiS0ZhoXW8ApcETsMqStLyFG_tu6epZMBhgQakJNjUdU-bIi3FbXD7lgcTuhcTgVjsYF2WWFfjml5DW-rgVaK3D8Q8SF019Ke2vrJYq1gk7If49fS0z0uOic6KAfsvTCNeiGojQTiYYsbBzpTHQmT9fpiVSiX_MS3P7xfUwAAAAHRUWCBAA")
+STRING1 = getenv("STRING_SESSION", "BQG0OpUALQcWKwtgXptXAnK_y445LfY755gDC_U01_Q0N-SNPFOPEhnXSXRAqM3ZoZGrmYzRJitEdqiTRvRTl6xTfqdmaU2Hhn19If4Laudocr0XZpamulPBFHapFZwPCYHS2h0jd0UDbdF5sKC1GohDos-ahaTXo56NH7dr1x_7hMGzL03lvZdJ3CV18B-t2NmePxaKP7Xk15zhbcV92B-356pnbnCu1xT2msDCI7IT6WFGxHOj03xNm2VJI_ptC5lETF4HmlLDAq1XPXC0zo5XxpS7jxXzSYhn7MWygx71OPJFcDjMujCgQWbKp39lZ2nHFgsupNXHviaBt09tqaIayaVZoQAAAAGbzo9oAA")
 STRING2 = getenv("STRING_SESSION2", None)
 STRING3 = getenv("STRING_SESSION3", None)
 STRING4 = getenv("STRING_SESSION4", None)
