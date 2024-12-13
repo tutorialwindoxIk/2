@@ -2,25 +2,54 @@ from AnonX.core.bot import AnonXBot
 from AnonX.core.dir import dirr
 from AnonX.core.git import git
 from AnonX.core.userbot import Userbot
-from AnonX.misc import dbb, heroku
+from AnonX.misc import dbb, heroku, sudo
+from aiohttp import ClientSession
 
 from .logging import LOGGER
 
+# Directories
 dirr()
+
+# Check Git Updates
 git()
+
+# Initialize Memory DB
 dbb()
+
+# Heroku APP
 heroku()
 
-app = AnonXBot()
-userbot = Userbot()
+# Load Sudo Users from DB
+sudo()
 
+# Bot Client
+app = AnonXBot()
+
+# Assistant Client
+userbot = Userbot()
 
 from .platforms import *
 
-Apple = AppleAPI()
-Carbon = CarbonAPI()
-SoundCloud = SoundAPI()
-Spotify = SpotifyAPI()
-Resso = RessoAPI()
-Telegram = TeleAPI()
 YouTube = YouTubeAPI()
+Carbon = CarbonAPI()
+Spotify = SpotifyAPI()
+Apple = AppleAPI()
+Resso = RessoAPI()
+SoundCloud = SoundAPI()
+Telegram = TeleAPI()
+
+aiohttpsession = ClientSession()
+
+if name == "main":
+    asyncio.run(initialize_session())
+
+import asyncio
+from aiohttp import ClientSession
+
+async def main():
+    async with ClientSession() as aiohttpsession:
+        # আপনার লজিক এখানে লিখুন
+        print("Session created successfully")
+
+if __name__ == "__main__":
+    asyncio.run(main())
