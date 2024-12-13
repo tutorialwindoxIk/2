@@ -1,45 +1,31 @@
+import asyncio
+from aiohttp import ClientSession
 from AnonX.core.bot import AnonXBot
 from AnonX.core.dir import dirr
 from AnonX.core.git import git
 from AnonX.core.userbot import Userbot
 from AnonX.misc import dbb, heroku, sudo
-from aiohttp import ClientSession
+from AnonX.platforms import YouTubeAPI, CarbonAPI, SpotifyAPI, AppleAPI, RessoAPI, SoundAPI, TeleAPI
 
-from .logging import LOGGER
-
-# Directories
 dirr()
-
-# Check Git Updates
 git()
-
-# Initialize Memory DB
 dbb()
-
-# Heroku APP
 heroku()
-
-# Load Sudo Users from DB
 sudo()
 
-# Bot Client
-app = AnonXBot()
+aiohttpsession = None
 
-# Assistant Client
-userbot = Userbot()
+async def init_aiohttp_session():
+    global aiohttpsession
+    if aiohttpsession is None:
+        aiohttpsession = ClientSession()
 
-from .platforms import *
-
-YouTube = YouTubeAPI()
-Carbon = CarbonAPI()
-Spotify = SpotifyAPI()
-Apple = AppleAPI()
-Resso = RessoAPI()
-SoundCloud = SoundAPI()
-Telegram = TeleAPI()
-
-aiohttpsession = ClientSession()
+async def main():
+    await init_aiohttp_session()
+    app = AnonXBot()
+    await app.start()
+    userbot = Userbot()
+    await userbot.start()
 
 if name == "main":
-    asyncio.run(initialize_session())
-
+    asyncio.run(main())
