@@ -22,7 +22,7 @@ async def init_aiohttp_session():
 
 async def main():
     await init_aiohttp_session()
-    app = AnonXBot()
+    app = Anon()
     await app.start()
     userbot = Userbot()
     await userbot.start()
